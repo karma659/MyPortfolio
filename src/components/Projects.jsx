@@ -3,7 +3,9 @@ import userr from "../assets/user.PNG";
 import movier from "../assets/movie.PNG";
 import chatr from "../assets/chatsnap.PNG";
 import swach from "../assets/swach.PNG";
-import portf from "../assets/portf.PNG";
+import portf from "../assets/picc.PNG";
+import ecom from "../assets/ecom.PNG";
+import recom from "../assets/recom.PNG";
 
 const Projects = () => {
 
@@ -13,63 +15,69 @@ const Projects = () => {
             data-aos="slide-down"
             data-aos-duration="1000"
             className="  flex  items-center justify-center py-4 ">
-            <h1 className="  text-3xl sm:text-7xl font-[Nunito] hover:font-[Roboto]  text-green-600"> Projects</h1>
+            <h1 className="  text-3xl sm:text-7xl font-[Nunito]   text-yellow-600"> Projects</h1>
          </div>
          
         <div className="p-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 
+ 
+
     <div  data-aos="fade-out" className="  rounded overflow-hidden shadow-lg">
-      <img className="w-full h-60" src={chatr} alt="Mountain"/>
+      <img className="w-full h-60" src={ecom} alt="Mountain"/>
       <div className="px-6 py-4">
-        <div  data-aos="fade-out" className="font-bold text-xl mb-2 text-blue-700">MERN Chat App</div>
+        <div  data-aos="fade-out" className="font-bold text-xl mb-2 text-blue-700">MERN Ecommerce App</div>
         <p className="text-gray-700 text-base">
-        A multi user chat application which connects different users from server using socket.io.
+        Website for buying and selling products supports authentication and authorization with JSON Web
+Token for admin and customer users. 
         </p>
       </div>
-      <div className=" px-5 py-5 justify-between flex ">
-      <button onClick={(e) => {
+      <div className=" px-8 py-8 justify-between flex    ">
+    <button onClick={(e) => {
                  e.preventDefault();
-             window.location.href='https://github.com/karma659/CIRCLE-CONNECT/tree/master';}
+             window.location.href='https://github.com/karma659/Appecomo';}
             } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-green-700 text-xl " >Source</button>
-      <button onClick={(e) => {
+            <button onClick={(e) => {
                  e.preventDefault();
-             window.location.href='https://circleconnectapp.herokuapp.com/';}
-            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
+             window.location.href='https://appecomo-karma659.vercel.app/';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700   text-xl">Link</button>
       </div>
+
     </div>
     
-    <div data-aos="fade-out" className="  rounded overflow-hidden shadow-lg">
+
+    {/* <div data-aos="fade-out" className="  rounded overflow-hidden shadow-lg">
  
     <img className=" w-full h-60 " src={movier} alt="River"/>
      
       <div className="px-6 py-4  ">
-        <div data-aos="fade-out" className="font-bold text-xl mb-2  text-blue-700">OmDb Movie Search Using React</div>
+        <div data-aos="fade-out" className="font-bold text-xl mb-2  text-blue-700">BROWSER GAME APP</div>
         <p className="text-gray-700 text-base">
-        A movie search app which shows movies posters  from the OmDb Api and
-returns the searched movie posters.
+        Developed a game search app which shows browser games from the
+Freetogame Api and returns the searched games with game link to play.
         </p>
       </div>
-      <div className=" px-5 py-5 justify-between flex ">
+      <div className=" px-8 py-8 justify-between flex ">
       <button onClick={(e) => {
                  e.preventDefault();
-             window.location.href='https://github.com/karma659/MovieReact';}
+             window.location.href='';}
             } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-green-700 text-xl " >Source</button>
       <button onClick={(e) => {
                  e.preventDefault();
-             window.location.href='https://csb-p82p6i-g9wj79nxg-karma659.vercel.app/';}
+             window.location.href='';}
             } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
       </div>
-    </div>
+    </div> */}
 
     <div  data-aos="fade-out" className="rounded overflow-hidden shadow-lg">
       <img className="w-full h-60" src={userr} alt="Forest"/>
       <div className="px-6 py-4">
         <div data-aos="fade-out" className="font-bold text-xl mb-2  text-blue-700">React-Redux User Profile App</div>
         <p className="text-gray-700 text-base">
-        Dispaly user profile details on clicking the button of id  people using pagination and redux store .
+        Dispaly user profile details on clicking the button of id
+          people using pagination and redux store .
         </p>
       </div>
-      <div className=" px-5 py-5 justify-between flex ">
+      <div className=" px-8 py-14 justify-between flex ">
       <button onClick={(e) => {
                  e.preventDefault();
              window.location.href='https://github.com/karma659/ReactReduxUserProfile';}
@@ -80,8 +88,8 @@ returns the searched movie posters.
             } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
       </div>
       </div>
-
-      <div data-aos="fade-out" className="rounded overflow-hidden shadow-lg">
+{/*
+     <div data-aos="fade-out" className="rounded overflow-hidden shadow-lg">
       <img className="w-full h-60" src={swach} alt="Forest"/>
       <div className="px-6 py-4">
         <div data-aos="fade-out" className="font-bold text-xl mb-2 text-blue-700">SwachBin</div>
@@ -93,10 +101,12 @@ returns the searched movie posters.
     
       <button onClick={(e) => {
                  e.preventDefault();
-             window.location.href='https://karma659.github.io/SwachBin.github.io-main/';}
+             window.location.href='';}
             }className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
       </div>
-  </div>  
+  </div>
+  */}
+          
   <div data-aos="fade-out" className="rounded overflow-hidden shadow-lg">
       <img className="w-full h-60" src={portf} alt="Forest"/>
       <div className="px-6 py-4">
@@ -106,11 +116,65 @@ returns the searched movie posters.
         while learning  Tailwind Css and React .
         </p>
       </div>
-      <div className=" px-5 py-5  float-right ">
-     
-      <button className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
+      <div className=" px-8 py-14  justify-between flex  ">
+      <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='https://github.com/karma659/MyPortfolio';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-green-700 text-xl " >Source</button>
+      <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='https://portfolio-karma659.vercel.app/';}} className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700  text-xl">Link</button>
       </div>
   </div>  
+{/* 
+  <div  data-aos="fade-out" className="  rounded overflow-hidden shadow-lg">
+      <img className="w-full h-60" src={chatr} alt="Mountain"/>
+      <div className="px-6 py-4">
+        <div  data-aos="fade-out" className="font-bold text-xl mb-2 text-blue-700">MERN Chat App</div>
+        <p className="text-gray-700 text-base">
+        A multi user chat application which connects different users from server using socket.io.
+        </p>
+      </div>
+      <div className=" px-8 py-14 justify-between flex    ">
+  <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-green-700 text-xl " >Source</button>
+      
+            <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700   text-xl">Link</button>
+      </div>
+
+    </div> */}
+
+    
+  <div  data-aos="fade-out" className="  rounded overflow-hidden shadow-lg">
+      <img className="w-full h-60" src={recom} alt="Mountain"/>
+      <div className="px-6 py-4">
+        <div  data-aos="fade-out" className="font-bold text-xl mb-2 text-blue-700">Recomendation System</div>
+        <p className="text-gray-700 text-base">
+        Applied Natural Language Feature Engineering and built a content
+based recommendation system using NLPModels (Bag of words and
+TF-IDF) .
+        </p>
+      </div>
+      <div className=" px-8 py-8 justify-between flex   ">
+    <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='https://github.com/karma659/Recommendation-System';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-green-700 text-xl " >Source</button>
+       
+           {/* <button onClick={(e) => {
+                 e.preventDefault();
+             window.location.href='';}
+            } className="shadow-lg font-[Nunito] hover:font-[Roboto]  cursor-pointer text-red-700   text-xl">Link</button>
+          */}
+      </div>
+
+    </div>
+
     </div>
     
   </div>

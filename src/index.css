@@ -9,6 +9,7 @@
 @layer base{
     body { 
         @apply font-[Nunito];
+        
     }
     li   {
          @apply font-[Nunito];
@@ -19,5 +20,7 @@
    
          @apply hover:underline underline-offset-8 ;
         }
+    
+        }
+        
               
-}

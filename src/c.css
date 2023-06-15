@@ -1,0 +1,27 @@
+
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right,#30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+
+body {
+	
+	
+	background: linear-gradient(to right, white 20%, rgb(228, 221, 221) 100%);
+	overflow-x: hidden;
+}
+
+.gg{
+     
+	font-size: small;
+	text:small ;
+            
+}
+	@media only screen and (max-width: 600px) {
+		.gg {
+		  font-size: small;
+		}
+	  }
+

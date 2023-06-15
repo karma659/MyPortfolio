@@ -6,6 +6,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Work from './components/Work';
+
 function App() {
 
   useEffect(() => {
@@ -16,6 +18,7 @@ function App() {
     <Navbar/>
      <Home/>
      <About/>
+     <Work/>
      <Skills/>
      <Projects/>
    </div>
